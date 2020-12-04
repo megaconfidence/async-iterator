@@ -1,10 +1,10 @@
 const map = async (array, callback) => {
-  const arr = [];
+  const _array = [];
   for (let index = 0; index < array.length; index++) {
-    const val = await callback(array[index], index, array);
-    arr.push(val);
+    const value = await callback(array[index], index, array);
+    _array.push(value);
   }
-  return arr;
+  return _array;
 };
 
 const forEach = async (array, callback) => {

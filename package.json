@@ -6,16 +6,25 @@
   "description": "Easy to use async forEach and map utility functions",
   "keywords": [
     "async-map",
+    "async map",
     "async-foreach",
-    "async-iterator"
+    "async foreach",
+    "async-iterator",
+    "async iterator",
+    "async for loop",
+    "map",
+    "foreach"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/cokoghenun/async-iterator.git"
   },
-  "homepage": "https://github.com/cokoghenun/async-iterator#async-iterator",
+  "homepage": "https://github.com/cokoghenun/async-iterator#@cokoghenun/async-iterator",
   "author": "Confidence Okoghenun <confidenceboi@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "deploy": "npm login && np"
+    "release": "npm login && np"
   }
 }
