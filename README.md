@@ -10,19 +10,19 @@ $ npm install @cokoghenun/async-iterator
 
 ## Features
 
-- Async `map`
 - Async `forEach`
+- Async `map`
 
 ## Example
 
-To use the `map` utility
+To use the async `map` utility, call the `asyncMap` method:
 
 ```js
-const asyncItr = require('@cokoghenun/async-iterator');
+const iterator = require('@cokoghenun/async-iterator');
 
 const myArray = ['1st async stuff to do', '2nd async stuff to do'];
 
-const asyncGeneratedArray = await asyncItr.map(
+const asyncGeneratedArray = await iterator.asyncMap(
   myArray,
   async (item, index, array) => {
     // do async stuff here
@@ -31,14 +31,14 @@ const asyncGeneratedArray = await asyncItr.map(
 );
 ```
 
-To use the `forEach` utility
+To use the async `forEach` utility, call the `asyncForEach` method: 
 
 ```js
-const asyncItr = require('@cokoghenun/async-iterator');
+const iterator = require('@cokoghenun/async-iterator');
 
 const myArray = ['1st async stuff to do', '2nd async stuff to do'];
 
-await asyncItr.forEach(myArray, async (item, index, array) => {
+await iterator.asyncForEach(myArray, async (item, index, array) => {
   // do async stuff here
 });
 ```
@@ -46,13 +46,13 @@ await asyncItr.forEach(myArray, async (item, index, array) => {
 ## API
 
 ```js
-asyncItr.METHOD(ARRAY, CALLBACK(ITEM, INDEX, ARRAY));
+iterator.METHOD(ARRAY, CALLBACK(ITEM, INDEX, ARRAY));
 ```
 
 Where
 
-- **asyncItr** is an instance of `@cokoghenun/async-iterator`
-- **METHOD** is a utility function i.e `map` or `forEach`
+- **iterator** is an instance of `@cokoghenun/async-iterator`
+- **METHOD** is a utility function i.e `asyncMap` or `asyncForEach`
 - **ARRAY** is the array to be operated on
 - **CALLBACK** is an asynchronous funcion passed to the **METHOD** that returns
   - **ITEM** which is the current item being looped over
