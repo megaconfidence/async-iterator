@@ -5,15 +5,15 @@
   "license": "MIT",
   "description": "Easy to use async forEach and map utility functions",
   "keywords": [
+    "map",
+    "foreach",
     "async-map",
     "async map",
     "async-foreach",
     "async foreach",
     "async-iterator",
     "async iterator",
-    "async for loop",
-    "map",
-    "foreach"
+    "async for loop"
   ],
   "repository": {
     "type": "git",
